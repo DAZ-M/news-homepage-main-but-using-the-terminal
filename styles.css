@@ -84,6 +84,6 @@ header ul {
  /***************************************************************************/
 
  main{
-    position: relative;
-    margin-top: 45px;
+    position: absolute;
+    margin-top: 55px;
  }
