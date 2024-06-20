@@ -82,3 +82,8 @@ header ul {
     flex-direction: row;
 }
  /***************************************************************************/
+
+ main{
+    position: relative;
+    margin-top: 45px;
+ }
