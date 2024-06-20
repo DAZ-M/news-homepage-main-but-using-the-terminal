@@ -76,4 +76,9 @@ header ul {
 .main-content-wrap {
     display: flex;
 }
+
+.article-with-image{
+    display: flex;
+    flex-direction: row;
+}
  /***************************************************************************/
