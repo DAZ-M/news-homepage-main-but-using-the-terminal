@@ -1,3 +1,8 @@
+:root{
+    --aside-background : black;
+    --aside-font-color:white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 25px auto 0 auto;
   position: relative;
 }
@@ -24,6 +29,18 @@ header li {
   list-style: none;
 }
 
+main {
+  position: absolute;
+  margin-top: 55px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 header ul {
   display: flex;
   flex-direction: row;
@@ -31,19 +48,23 @@ header ul {
   justify-content: space-evenly;
 }
 
+
+aside{
+    background-color: var(--aside-background);
+    color: var(--aside-font-color);
+    min-height: 450px;
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .logo {
   width: 15%;
   height: 2.5rem;
   background-image: url("./assets/images/logo.svg");
   background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.banner {
-  width: 50%;
-  height: 400px;
-  background-image: url("./assets/images/image-web-3-desktop.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -57,40 +78,39 @@ header ul {
     flex-wrap: nowrap;
 } */
 
- /***************************************************************************/
-#featured-article{
-   /*  display: flex;
+/***************************************************************************/
+#featured-article {
+  /*  display: flex;
     flex-direction: column; */
-    width: 60%;
+  width: 60%;
 }
 
-#featured-article img{
-    object-fit: contain;
-    width: 100%;
+#featured-article img {
+  object-fit: contain;
+  width: 100%;
 }
 
-#more-content{
-    display: flex;
+#more-content {
+  display: flex;
 }
 
-.main-content-wrap {
-    display: flex;
-}
 
-.article-with-image{
+#main-text-content{
     display: flex;
     flex-direction: row;
 }
- /***************************************************************************/
 
- main{
-    position: absolute;
-    margin-top: 55px;
- }
+#button-and-text-wrap{
+    display: flex;
+    flex-direction: column;
+}
 
- footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
- }
+.main-content-wrap {
+  display: flex;
+}
+
+.article-with-image {
+  display: flex;
+  flex-direction: row;
+}
+/***************************************************************************/
