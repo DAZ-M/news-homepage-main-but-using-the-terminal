@@ -13,6 +13,7 @@ body {
   max-width: 1500px;
   margin: 25px auto 0 auto;
   position: relative;
+  font-size: 15px;
 }
 
 header {
@@ -98,12 +99,26 @@ aside{
 #main-text-content{
     display: flex;
     flex-direction: row;
+    height: auto;
+}
+
+#main-text-content h1{
+    font-size: 4rem;
 }
 
 #button-and-text-wrap{
+    /* height: 100%; */
+    
     display: flex;
     flex-direction: column;
+
+    justify-content: space-between;
 }
+
+#button-and-text-wrap button{
+    justify-self: flex-end;
+}
+
 
 .main-content-wrap {
   display: flex;
