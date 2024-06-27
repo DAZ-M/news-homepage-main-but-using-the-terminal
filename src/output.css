@@ -1164,6 +1164,14 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1346,6 +1354,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2422,11 +2434,15 @@ video {
   box-sizing: border-box;
 }
 
+main{
+  margin-top: 50px;
+}
+
 body {
   max-width: 1500px;
-  margin: 25px auto 0 auto;
-  position: relative;
+  min-height: calc(100vh - 50px);
   font-size: 15px;
+  margin:auto;
 }
 
 header {
@@ -2435,17 +2451,14 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: blueviolet;
 }
 
 header li {
   list-style: none;
-}
-
-main {
-  position: absolute;
-  margin-top: 55px;
 }
 
 footer {
@@ -2460,20 +2473,10 @@ header ul {
   justify-content: space-evenly;
 }
 
-aside{
-  background-color: var(--aside-background);
-  color: var(--aside-font-color);
-  min-height: 450px;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .logo {
   width: 15%;
   height: 2.5rem;
-  background-image: url("./assets/images/logo.svg");
+  background-image: url("../assets/images/logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2481,61 +2484,6 @@ aside{
 .nav-menu {
   width: 50%;
 }
-
-/* main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
-
-/***************************************************************************/
-
-/* #featured-article {
-  width: 60%;
-} */
-
-/* #featured-article img {
-  object-fit: contain;
-  width: 100%;
-} */
-
-/* #more-content {
-  display: flex;
-} */
-
-/* #main-text-content{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-} */
-
-/* #main-text-content h1{
-    font-size: 4rem;
-}
- */
-
-/* #button-and-text-wrap{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-between;
-}
- */
-
-/* #button-and-text-wrap button{
-    justify-self: flex-end;
-} */
-
-/* .main-content-wrap {
-  display: flex;
-} */
-
-/* .article-with-image {
-  display: flex;
-  flex-direction: row;
-} */
-
-/***************************************************************************/
 
 @media (min-width: 640px) {
   .sm\:container {
