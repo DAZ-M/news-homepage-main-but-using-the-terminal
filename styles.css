@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     --aside-background : black;
     --aside-font-color:white;
@@ -36,8 +40,6 @@ main {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   text-align: center;
 }
@@ -80,52 +82,48 @@ aside{
 } */
 
 /***************************************************************************/
-#featured-article {
-  /*  display: flex;
-    flex-direction: column; */
+/* #featured-article {
   width: 60%;
-}
+} */
 
-#featured-article img {
+/* #featured-article img {
   object-fit: contain;
   width: 100%;
-}
+} */
 
-#more-content {
+/* #more-content {
   display: flex;
-}
+} */
 
 
-#main-text-content{
+/* #main-text-content{
     display: flex;
     flex-direction: row;
     height: auto;
-}
+} */
 
-#main-text-content h1{
+/* #main-text-content h1{
     font-size: 4rem;
 }
-
-#button-and-text-wrap{
-    /* height: 100%; */
-    
+ */
+/* #button-and-text-wrap{
     display: flex;
     flex-direction: column;
 
     justify-content: space-between;
 }
-
-#button-and-text-wrap button{
+ */
+/* #button-and-text-wrap button{
     justify-self: flex-end;
-}
+} */
 
 
-.main-content-wrap {
+/* .main-content-wrap {
   display: flex;
-}
+} */
 
-.article-with-image {
+/* .article-with-image {
   display: flex;
   flex-direction: row;
-}
+} */
 /***************************************************************************/
