@@ -64,3 +64,9 @@ header ul {
 .nav-menu {
   width: 50%;
 }
+
+#main-text-content h1{
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 600;
+}

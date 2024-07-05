@@ -671,6 +671,10 @@ video {
   isolation: auto;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -1358,6 +1362,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2483,6 +2491,12 @@ header ul {
 
 .nav-menu {
   width: 50%;
+}
+
+#main-text-content h1{
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 600;
 }
 
 @media (min-width: 640px) {
